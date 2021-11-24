@@ -1,0 +1,215 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+    background-color: hsl(226, 43%, 10%);
+    color: white;
+    font-family: 'Rubik', sans-serif;
+    position: relative;
+}
+
+main{
+    margin: auto;
+}
+.item{
+    display: inline-block;
+    padding-top: 0px;
+}
+.row{
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+}
+
+.col{
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+.box{
+    border-radius: 10px;
+    height: 250px;
+    overflow: hidden;
+}
+.col-profil{
+    background-color: hsl(235, 46%, 20%);
+    border-radius: 10px;
+    position: relative;
+    width: 250px;
+    height: 536px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+.col-work{
+    background-color: hsl(15, 100%, 70%);
+    position: relative;
+    width: 250px;
+}
+.col-study{
+    background-color: hsl(348, 100%, 68%);
+    position: relative;
+    min-width: 250px;
+}
+.col-play{
+    background-color: hsl(195, 74%, 62%);
+    position: relative;
+    width: 250px;
+}
+.col-exerice{
+    background-color: hsl(145, 58%, 55%);
+    position: relative;
+    width: 250px;
+}
+
+.col-social{
+    background-color: hsl(264, 64%, 52%);
+    position: relative;
+    width: 250px;
+}
+.col-selfcare{
+    background-color: hsl(43, 84%, 65%);
+    position: relative;
+    width: 250px;
+}
+.background-image{
+    position: absolute;
+    right: 0%;
+    top: -5%
+}
+.profil-overlay{
+    height: 70%;
+    width: 100%;
+    background-color: hsl(246, 80%, 60%);
+    border-radius: 10px;
+    padding: 20px;
+    box-sizing: border-box
+}
+
+.overlay{
+    position: absolute;
+    top: 20%;
+    height: 80%;
+    width: 100%;
+    border-radius: 10px;
+    background-color: hsl(235, 46%, 20%);
+    padding: 20px;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+.overlay:hover{
+    background-color: hsl(235, 45%, 61%);
+}
+
+.row-nav{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.photo{
+    width: 70px;
+}
+.profil-info{
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+ul li{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    list-style-type: none;
+}
+.content{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.name{
+    font-size: 50px;
+}
+.daily, .weekly, .monthly{
+    color: hsl(236, 100%, 87%);
+}
+.daily:hover, .weekly:hover,.monthly:hover{
+    color: white;
+}
+.box-title{
+    font-weight: bold;
+}
+.total{
+    font-size: 30px;
+}
+.base-hour{
+    font-size: 20px;
+}
+
+@media screen and (max-width: 1024px) {
+
+}
+
+@media screen and (max-width: 500px) {
+    .main{
+        width: 370px;
+        margin: auto;
+    }
+    .item{
+        display: block;
+    }
+    .profil-overlay{
+        height: 60%;
+    }
+    .col-profil{
+        height: 200px;
+        width: 350px;
+    }
+    .row{
+
+    }
+    .col{
+        width: 350px;
+        margin-right: 0px;
+    }
+    .box{
+        height: 170px;
+    }
+    .col-work{
+        min-width: 350px;
+    }
+    .col-study{
+        min-width: 350px;
+    }
+    .col-play{
+        min-width: 350px;
+    }
+    .col-exerice{
+        min-width: 350px;
+    }
+
+    .col-social{
+        min-width: 350px;
+    }
+    .col-selfcare{
+        min-width: 350px;
+    }
+    .row-nav{
+        flex-direction: row;
+    }
+    .content{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .photo{
+        display: inline-block;
+        width: 70px;
+    }
+    .profil-info{
+        display: inline-block;
+    }
+    .name{
+        font-size: 30px;
+    }
+}

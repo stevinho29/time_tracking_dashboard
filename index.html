@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+
+  <title>Frontend Mentor | Time tracking dashboard</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+
+</head>
+<body>
+  <main role="main">
+      <div class="item col-profil">
+        <div class="profil-overlay" >
+          <span class="">
+            <img src="images/image-jeremy.png" class="photo" alt="profile photo">
+          </span>
+          <div class="profil-info">
+            <div class="" >Report for</div>
+            <div  class="name">Jeremy Robson</div>
+          </div>
+        </div>
+        <ul class="row-nav">
+          <li><span class="daily" style="cursor: pointer">Daily</span></li>
+          <li><span class="weekly" style="cursor: pointer">Weekly</span></li>
+          <li><span class="monthly" style="cursor: pointer">Monthly</span></li>
+        </ul>
+      </div>
+      <div class="item">
+        <div class="row">
+          <div class="col box col-work">
+            <img src="images/icon-work.svg" class="background-image">
+            <div class="overlay">
+              <div class="row" style="justify-content: space-between">
+                    <div class="box-title">Work</div>
+                    <div class="icon">
+                      <img src="images/icon-ellipsis.svg">
+                    </div>
+                  </div>
+              <div class="content">
+                  <div class="total">
+                    <div class="daily-total" style="display: none"> 5hrs</div>
+                    <div class="weekly-total" style="display: none"> 32hrs</div>
+                    <div class="monthly-total"> 103hrs</div>
+                  </div>
+                  <div class="base-hour">
+                    <div class="daily-base" style="display: none">Previous - 7hrs <!-- daily --></div>
+                    <div class="weekly-base" style="display: none">Previous - 36hrs <!-- daily --></div>
+                    <div class="monthly-base">Previous - 128hrs <!-- daily --></div>
+                    </div>
+                </div>
+              </div>
+            </div>
+          <div class="col box col-play">
+           <img src="images/icon-play.svg" background-image>
+            <div class="overlay">
+              <div class="row" style="justify-content: space-between;">
+                    <div class="box-title">Play</div>
+                    <div class="icon">
+                      <img src="images/icon-ellipsis.svg">
+                    </div>
+                  </div>
+              <div class="content">
+
+                  <div class="total">
+                    <div class="daily-total" style="display: none"> 5hrs</div>
+                    <div class="weekly-total" style="display: none"> 32hrs</div>
+                    <div class="monthly-total"> 103hrs</div>
+                  </div>
+                  <div class="base-hour">
+                    <div class="daily-base" style="display: none">Previous - 7hrs <!-- daily --></div>
+                    <div class="weekly-base" style="display: none">Previous - 36hrs <!-- daily --></div>
+                    <div class="monthly-base">Previous - 128hrs <!-- daily --></div>
+                    </div>
+                </div>
+              </div>
+          </div>
+          <div class="col box col-study">
+            <img src="images/icon-study.svg" background-image>
+            <div class="overlay">
+              <div class="row" style="justify-content: space-between">
+                    <div class="box-title">Study</div>
+                    <div class="icon">
+                      <img src="images/icon-ellipsis.svg">
+                    </div>
+              </div>
+              <div class="content">
+                  <div class="total">
+                    <div class="daily-total" style="display: none"> 5hrs</div>
+                    <div class="weekly-total" style="display: none"> 32hrs</div>
+                    <div class="monthly-total"> 103hrs</div>
+                  </div>
+                  <div class="base-hour">
+                    <div class="daily-base" style="display: none">Previous - 7hrs <!-- daily --></div>
+                    <div class="weekly-base" style="display: none">Previous - 36hrs <!-- daily --></div>
+                    <div class="monthly-base">Previous - 128hrs <!-- daily --></div>
+                    </div>
+                </div>
+              </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col box col-exerice">
+            <img src="images/icon-exercise.svg" class="background-image">
+            <div class="overlay">
+              <div class="row" style="justify-content: space-between">
+                    <div class="box-title">Exercise</div>
+                    <div class="icon">
+                      <img src="images/icon-ellipsis.svg">
+                    </div>
+                  </div>
+              <div class="content">
+                  <div class="total">
+                    <div class="daily-total" style="display: none"> 5hrs</div>
+                    <div class="weekly-total" style="display: none"> 32hrs</div>
+                    <div class="monthly-total"> 103hrs</div>
+                  </div>
+                  <div class="base-hour">
+                    <div class="daily-base" style="display: none">Previous - 7hrs <!-- daily --></div>
+                    <div class="weekly-base" style="display: none">Previous - 36hrs <!-- daily --></div>
+                    <div class="monthly-base">Previous - 128hrs <!-- daily --></div>
+                    </div>
+                </div>
+              </div>
+          </div>
+          <div class="col box col-social">
+              <img src="images/icon-social.svg" class="background-image">
+            <div class="overlay">
+                <div class="row" style="justify-content: space-between">
+                    <div class="box-title">Social</div>
+                    <div class="icon">
+                      <img src="images/icon-ellipsis.svg">
+                    </div>
+                  </div>
+              <div class="content">
+                  <div class="total">
+                    <div class="daily-total" style="display: none"> 5hrs</div>
+                    <div class="weekly-total" style="display: none"> 32hrs</div>
+                    <div class="monthly-total"> 103hrs</div>
+                  </div>
+                  <div class="base-hour">
+                    <div class="daily-base" style="display: none">Previous - 7hrs <!-- daily --></div>
+                    <div class="weekly-base" style="display: none">Previous - 36hrs <!-- daily --></div>
+                    <div class="monthly-base">Previous - 128hrs <!-- daily --></div>
+                    </div>
+                </div>
+              </div>
+          </div>
+          <div class="col box col-selfcare">
+            <img src="images/icon-self-care.svg" class="background-image">
+            <div class="overlay">
+              <div class="row" style="justify-content: space-between">
+                    <div class="box-title">Self Care</div>
+                    <div class="icon">
+                      <img src="images/icon-ellipsis.svg">
+                    </div>
+                  </div>
+              <div class="content">
+
+                  <div class="total">
+                    <div class="daily-total" style="display: none"> 5hrs</div>
+                    <div class="weekly-total" style="display: none"> 32hrs</div>
+                    <div class="monthly-total"> 103hrs</div>
+                  </div>
+                  <div class="base-hour">
+                    <div class="daily-base" style="display: none">Previous - 7hrs <!-- daily --></div>
+                    <div class="weekly-base" style="display: none">Previous - 36hrs <!-- daily --></div>
+                    <div class="monthly-base">Previous - 128hrs <!-- daily --></div>
+                    </div>
+                </div>
+              </div>
+          </div>
+        </div>
+      </div>
+  </main>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script type="text/javascript">
+  daily = document.getElementsByClassName("daily")
+  weekly = document.getElementsByClassName("weekly")
+  monthly = document.getElementsByClassName("monthly")
+
+  dailies = document.getElementsByClassName("daily-base")
+  dailies_total = document.getElementsByClassName("daily-total")
+  weeklies = document.getElementsByClassName("weekly-base")
+  weeklies_total = document.getElementsByClassName("weekly-total")
+  monthlies = document.getElementsByClassName("monthly-base")
+  monthlies_total = document.getElementsByClassName("monthly-total")
+
+  console.log(dailies)
+  $(".daily").on('click', function (e){
+    $('.daily-base').each(elt =>{
+      elt.css = {"display": elt.style.display === "block" ? "none": "block"}
+      elt.css = {"display": elt.style.display === "block" ? "none": "block"}
+    })
+    $('.daily-total').each(elt =>{
+      elt.css = {"display": elt.style.display === "block" ? "none": "block"}
+      elt.css = {"display":elt.style.display === "block" ? "none": "block"}
+    })
+    $('.weekly-base').each(elt =>{
+      elt.css = {"display":elt.style.display === "block" ? "none": "block"}
+      elt.css = {"display":elt.style.display === "block" ? "none": "block"}
+    })
+    $('.weekly-total').each(elt =>{
+      elt.css = {"display":elt.style.display === "block" ? "none": "block"}
+      elt.style.display = elt.style.display === "block" ? "none": "block"
+    })
+    $('.monthly-base').each(elt =>{
+      elt.css = {"display":elt.style.display === "block" ? "none": "block"}
+      elt.css = {"display":elt.style.display === "block" ? "none": "block"}
+    })
+    $('.monthly-total').each(elt =>{
+      elt.css = {"display":elt.style.display === "block" ? "none": "block"}
+      elt.css = {"display":elt.style.display === "block" ? "none": "block"}
+    })
+  })
+
+</script>
+</html>
